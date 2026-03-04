@@ -1,4 +1,8 @@
-# Steps
+# Ansible Lab
+
+![Ansible](visual/ansible.png)
+
+## Steps
 
 1. vagrant up
 2. vagrant ssh control
