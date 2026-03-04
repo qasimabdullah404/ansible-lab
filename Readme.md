@@ -17,4 +17,4 @@
 15. exit
 16. vagrant ssh control
 17. vim inventory.ini
-18. 
+18. ansible all -i inventory.ini -m ping
