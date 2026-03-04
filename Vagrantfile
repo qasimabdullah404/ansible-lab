@@ -7,8 +7,8 @@ Vagrant.configure("2") do |config|
     control.vm.network "private_network", ip: "192.168.56.10"
     
     control.vm.provider "virtualbox" do |vb|
-      vb.memory = "2048" # 2GB
-      vb.cpus = 2
+      vb.memory = "1024"
+      vb.cpus = 1
       vb.name = "Ansible-Control"
     end
 
@@ -27,7 +27,7 @@ Vagrant.configure("2") do |config|
     node1.vm.network "private_network", ip: "192.168.56.11"
     
     node1.vm.provider "virtualbox" do |vb|
-      vb.memory = "1024"
+      vb.memory = "2048"
       vb.cpus = 1
       vb.name = "Ubuntu-Target"
     end
@@ -40,7 +40,7 @@ Vagrant.configure("2") do |config|
     node2.vm.network "private_network", ip: "192.168.56.12"
     
     node2.vm.provider "virtualbox" do |vb|
-      vb.memory = "1024"
+      vb.memory = "2048"
       vb.cpus = 1
       vb.name = "Alma-Target"
     end
